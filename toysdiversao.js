@@ -1,9 +1,9 @@
-
+       //Aqui adiciona-se novos produtos
         const items = [
             {
                     id: 0,
                     nome: "Tobogã inflável G",
-                    img: "./img/toboga.png",
+                    img: "./img/toboga.jpg",
                     quantidade: 0,
                     precoAluguel: 500
                 },
@@ -61,8 +61,9 @@
                 
     
             ]
-              //mudar para função dps
-        
+              
+                 //aqui eu criei uma função que ultiliza um map, para percorrer a lista de produtos,
+                 //extraindo as informações e montando o catálogo.
               function inicializarLoja() {
                 var containerBrinquedos = document.getElementById("brinquedos");
                // percorrer os itens da array com for
@@ -92,7 +93,6 @@
                 items.map((val) => {
                     if(val.quantidade > 0){
                     containerCarrinho.innerHTML += `
-    
                     <p>`+val.nome+` | quantidade: 1 `+` | valor: R$ `+val.precoAluguel+`,00 `+`| duração: 4h | s/ monitor`+`</p>
                     <hr>  
                     
@@ -113,5 +113,5 @@
                     return false;
                 })
             }
-    
+           
     
