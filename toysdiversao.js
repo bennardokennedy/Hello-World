@@ -4,43 +4,57 @@
                     id: 0,
                     nome: "Tobogã inflável G",
                     img: "./img/toboga.png",
-                    quantidade: 0
+                    quantidade: 0,
+                    precoAluguel: 500
                 },
                 {
                     id: 1,
                     nome: "Tobogã inflável P",
                     img: "./img/tobogap.jpg",
-                    quantidade: 0
+                    quantidade: 0,
+                    precoAluguel: 250
                 },
                 {
                     id: 2,
                     nome: "Piscina de Bolinhas",
                     img: "./img/piscinadebolinhas.jpg",
-                    quantidade: 0
+                    quantidade: 0,
+                    precoAluguel:250
                 },
                 {
                     id: 3,
-                    nome: "Cama Elástica G",
+                    nome: "C. Elástica 3,70m",
                     img: "./img/camaelasticag.jpg",
-                    quantidade: 0
+                    quantidade:0,
+                    precoAluguel: 160
                 },
                 {
                     id: 4,
-                    nome: "Cama Elástica P",
-                    img: "./img/camaelasticap.jpg",
-                    quantidade: 0
+                    nome: "C. Elástica 3,70m",
+                    img: "./img/camaelasticag2.jpg",
+                    quantidade:0,
+                    precoAluguel: 160
                 },
                 {
                     id: 5,
-                    nome: "Tombo </br> Legal ",
-                    img: "./img/tombolegal.jpg",
-                    quantidade: 0
+                    nome: "C. Elástica 2,66",
+                    img: "./img/camaelasticap.jpg",
+                    quantidade: 0,
+                    precoAluguel: 130
                 },
                 {
                     id: 6,
+                    nome: "Tombo </br> Legal ",
+                    img: "./img/tombolegal.jpg",
+                    quantidade: 0,
+                    precoAluguel: 250
+                },
+                {
+                    id: 7,
                     nome: "M.Algodão Doce",
                     img: "./img/maquinadealgodaodoce.jpg",
-                    quantidade: 0
+                    quantidade: 0,
+                    precoAluguel: 130
                 },
                 
     
@@ -79,7 +93,7 @@
                     if(val.quantidade > 0){
                     containerCarrinho.innerHTML += `
     
-                    <p>`+val.nome+` | quantidade: `+val.quantidade+`</p>
+                    <p>`+val.nome+` | quantidade: 1 `+` | valor: R$ `+val.precoAluguel+`,00 `+`| duração: 4h | s/ monitor`+`</p>
                     <hr>  
                     
                     
