@@ -16,6 +16,7 @@ body{
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
+    
 }
 #carrinho{
     max-width: 900px;
@@ -78,3 +79,21 @@ font-size: 27px;
 .voltar{ 
     position: absolute;
 }
+
+#text-total {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.botao{
+background-color: black; 
+color: white;
+margin-left: 10px;
+}
+
+.botao2{
+    background-color: black; 
+    color: white;
+    
+    }
+.btn:hover{color: gray;}
