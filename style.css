@@ -16,6 +16,7 @@ body{
     margin: 0 auto;
     padding: 0 2%;
     display: flex;
+    flex-wrap: wrap;
     
 }
 #carrinho{
@@ -43,7 +44,7 @@ body{
     padding: 10px;
     
 }
-.brinquedo-single a{
+.brinquedo-single button{
     text-decoration: none;
     color: white;
     background-color: #000000;
@@ -51,6 +52,7 @@ body{
     display: block;
     padding: 4px 0;
     font-size: 18px;
+    width: 100%;
 
 }
 h2{
@@ -83,17 +85,27 @@ font-size: 27px;
 #text-total {
     text-align: left;
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .botao{
 background-color: black; 
 color: white;
 margin-left: 10px;
+width: 120px;
+    height: 40px;
 }
 
 .botao2{
     background-color: black; 
     color: white;
-    
+    width: 120px;
+    height: 40px;
     }
-.btn:hover{color: gray;}
+.btn:hover{color: gray;};
+ 
+@media screen and (width: 768px){
+    .brinquedo-single{
+        width: 100%;
+        margin-right: 0;
+    }
+}

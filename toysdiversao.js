@@ -2,21 +2,21 @@
 const items = [
     {
         id: 0,
-        nome: "Tobogã inflável G",
+        nome: "Tobogã inflável Premium (G)",
         img: "./img/toboga.jpg",
         quantidade: 0,
         precoAluguel: 500
     },
     {
         id: 1,
-        nome: "Tobogã inflável P",
+        nome: "Tobogã inflável colorex(P)",
         img: "./img/tobogap.jpg",
         quantidade: 0,
         precoAluguel: 250
     },
     {
         id: 2,
-        nome: "Piscina de Bolinhas",
+        nome: "Piscina de Bolinhas inflável",
         img: "./img/piscinadebolinhas.jpg",
         quantidade: 0,
         precoAluguel: 250
@@ -44,14 +44,14 @@ const items = [
     },
     {
         id: 6,
-        nome: "Tombo </br> Legal ",
+        nome: "Tombo Legal ",
         img: "./img/tombolegal.jpg",
         quantidade: 0,
         precoAluguel: 250
     },
     {
         id: 7,
-        nome: "M.Algodão Doce",
+        nome: "M. Algodão Doce",
         img: "./img/maquinadealgodaodoce.jpg",
         quantidade: 0,
         precoAluguel: 130
@@ -74,7 +74,7 @@ function inicializarLoja() {
                     <div class= "brinquedo-single">
                         <img src= "`+ val.img + `" />
                         <p> `+ val.nome + `</p>
-                        <a key="`+ val.id + `" href="#">Add ao orçamento</a>
+                        <button class="addorcamento" key="`+ val.id + `" href="#">Add ao orçamento</button>
                     </div>        
                     
                     
@@ -109,7 +109,7 @@ atualizarCarrinho = () => {
     })
 
 }
-var links = document.getElementsByTagName('a');
+var links = document.getElementsByClassName('addorcamento');
 
 for (var i = 0; i < links.length; i++) {
     links[i].addEventListener("click", function () {

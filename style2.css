@@ -27,7 +27,8 @@
     background: #FFE32C;
     height: 8vh;
   }
-  
+ 
+
   main {
     background: url("./img/bg.png") no-repeat center center;
     background-size: cover;
@@ -52,7 +53,7 @@
   .mobile-menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: rgb(0, 0, 0);
     margin: 8px;
     transition: 0.3s;
   }
