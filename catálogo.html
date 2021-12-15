@@ -3,6 +3,7 @@
 <head>
     <title>Toys Diversão</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <ink rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100&display=swap" rel="stylesheet">
@@ -24,14 +25,21 @@
         </div>
 
         <h2>Catálogo</h2>
+       
     </div>
+</div>
+
+<center><h5>orçamento no fim da página</h5></center>
+
+</div>
+
     <div id="brinquedos">
     </div>
 
 
     <h2>Orçamento</h2>
 
-    <form name="formContato" action="" method="get">
+    <form id="test" name="formContato" action="" method="get">
         Selecione o local do evento(valor/frete):<br>
 
         <select name="local" id="local">
@@ -49,8 +57,8 @@
     <div id="carrinho">
     </div>
     <h5 id = "text-total" style="display: none;"><span id="total"></span></h5>
-    <button class = "btn botao" style="display: none;" id="btn-total" onclick="total()" id="cacularOrcamento">Total</button>
-    <button  class = "btn botao2" style="display: none;" id="limpartudo" onclick=" window.location.reload()">Limpar Tudo</button>
+    <button class = "btn botao" style="display: none;" id="btn-total" onclick="total()" id="cacularOrcamento">Total  <i class="fas fa-cash-register"></i></button>
+    <button  class = "btn botao2" style="display: none;" id="limpartudo" onclick=" window.location.reload()">Limpar Tudo <i class="far fa-trash-alt"></i></button>
     <script src="./toysdiversao.js"></script>
 </body>
 

@@ -2,14 +2,14 @@
 const items = [
     {
         id: 0,
-        nome: "Tobogã inflável Premium (G)",
+        nome: "Tobogã inflável Premium (Grande)",
         img: "./img/toboga.jpg",
         quantidade: 0,
         precoAluguel: 500
     },
     {
         id: 1,
-        nome: "Tobogã inflável colorex(P)",
+        nome: "Tobogã inflável colorex (Médio)",
         img: "./img/tobogap.jpg",
         quantidade: 0,
         precoAluguel: 250
@@ -74,7 +74,7 @@ function inicializarLoja() {
                     <div class= "brinquedo-single">
                         <img src= "`+ val.img + `" />
                         <p> `+ val.nome + `</p>
-                        <button class="addorcamento" key="`+ val.id + `" href="#">Add ao orçamento</button>
+                        <button class="addorcamento" key="`+ val.id + `" href="#"><i class="fas fa-plus"></i> Add ao orçamento</button>
                     </div>        
                     
                     
@@ -130,10 +130,10 @@ function total() {
 
 
     } document.getElementById("text-total").style = ""
-    
+
     valor += parseFloat(document.getElementById("local").value)
-    document.getElementById('total').innerText =  "R$"+valor +",00"
-    valor=0
+    document.getElementById('total').innerText = `R$` + valor + `,00`
+    valor = 0
 }
 
 

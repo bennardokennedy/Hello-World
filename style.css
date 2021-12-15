@@ -85,7 +85,7 @@ font-size: 27px;
 #text-total {
     text-align: left;
     font-size: 30px;
-    margin-left: 25px;
+    margin-left: 60px;
 }
 .botao{
 background-color: black; 
@@ -98,14 +98,59 @@ width: 120px;
 .botao2{
     background-color: black; 
     color: white;
-    width: 120px;
+    width: 132px;
     height: 40px;
     }
-.btn:hover{color: gray;};
- 
-@media screen and (width: 768px){
-    .brinquedo-single{
-        width: 100%;
-        margin-right: 0;
-    }
+.btn:hover{color: gray;}
+
+#test{
+    margin-left: 10px;
 }
+
+ 
+
+@media screen and (max-width: 768px){
+    .botao{
+        background-color: rgb(0, 0, 0); 
+        color: white;
+        width: 130px;
+         height: 60px; 
+         border-radius: 5px;  
+         font-size: larger;  
+         margin-left: 2px;
+    }
+    .botao2{
+        background-color: black; 
+        color: white;
+        width: 150px;
+        height: 60px;
+        border-radius: 5px;  
+        font-size: large;
+        }
+        #text-total {
+            text-align: left;
+            font-size: 45px;
+            margin-left: 40px;
+        }
+      
+        .icone{
+
+            color: rgb(0, 0, 0);
+            border: none;
+            font-size: 40px;
+        }
+        h2{
+            background-color: #FFE32C;
+            padding: 10px 0%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+        }
+        #test{
+            margin-left: 20px;
+            font-size: 20px;
+            text-align: left;
+            width: larger;
+
+        }
+    }
