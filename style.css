@@ -151,6 +151,11 @@ width: 120px;
             font-size: 20px;
             text-align: left;
             width: larger;
-
         }
+
+        #copyright{
+            text-align: left;
+            margin-left: 5px;
+            font-size: small;
+        }  
     }

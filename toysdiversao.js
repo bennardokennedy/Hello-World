@@ -133,7 +133,9 @@ function total() {
 
     valor += parseFloat(document.getElementById("local").value)
     document.getElementById('total').innerText = `R$` + valor + `,00`
-    valor = 0
+    valor = 0;
+
+    document.getElementById("copyright").style = ""
 }
 
 
